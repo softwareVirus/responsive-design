@@ -27,7 +27,7 @@ function App() {
             }
           </Grid>
           <Grid item sm={6} sx={{pl:0.50}}>
-            <Grid container spacing={3} sx={{p:4,fontWeight:'700','@media (max-width: 600px)': {p:3}}}> 
+            <Grid container spacing={3} sx={{p:4,fontWeight:'700','@media (max-width: 599.95px)': {p:3}}}> 
               <Grid item>
                 <Typography variant='h6' sx={{fontWeight:500,fontSize:'12px',color:'hsl(228, 12%, 48%)',letterSpacing:'6px'}}>
                   PERFUME
