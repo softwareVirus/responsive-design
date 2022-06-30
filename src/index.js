@@ -41,11 +41,14 @@ const theme = createTheme({
         }
       }
     }
-  },
+  },palette: {
+    price: 'hsl(158, 36%, 37%)',
+    primary: {
+      text: 'hsl(228, 12%, 48%)'
+    }
+  }
 })
 
-theme.palette.price = 'hsl(158, 36%, 37%)'
-theme.palette.primary.text = 'hsl(158, 36%, 37%)'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
