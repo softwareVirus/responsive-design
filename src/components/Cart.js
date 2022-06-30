@@ -7,10 +7,9 @@ export default function Cart({productInfos}) {
   const width = useMediaQuery(theme.breakpoints.up('sm'))
   console.log(productInfos)
   return (
-    <Grid sx={{maxWidth:'1440px',minHeight:'800px',display:'flex',}} justifyContent={'center'} alignItems={'center'}>
-      <Card sx={{borderRadius:3,boxShadow:'none',maxWidth:['375px','600px'],maxHeight:['100%','none']}}>
-        <Grid container flexDirection={'row'}>
-          <Grid item sm={6}>
+      <Card sx={{borderRadius:3,boxShadow:'none',maxWidth:['375px','600px'],height:['none',495.95],mt:5,maxHeight:['100%','none']}}>
+        <Grid container sx={{height:'100%'}} flexDirection={'row'}>
+          <Grid item sm={6} sx={{height:'100%'}}>
             {
               width 
               ?
@@ -78,7 +77,6 @@ export default function Cart({productInfos}) {
           </Grid>
         </Grid>
       </Card>
-    </Grid>
     
   );
 }

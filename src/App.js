@@ -16,7 +16,7 @@ const infos = {
 function App() {
   console.log({...infos})
   return (
-    <Grid>
+    <Grid sx={{maxWidth:'1440px',minHeight:'800px',display:'flex'}} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
       <Cart productInfos={infos} />
       <Cart productInfos={{...infos, description: 'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.'}}/>
     </Grid>
