@@ -41,7 +41,8 @@ const theme = createTheme({
         }
       }
     }
-  },palette: {
+  },
+  palette: {
     price: 'hsl(158, 36%, 37%)',
     primary: {
       text: 'hsl(228, 12%, 48%)'
