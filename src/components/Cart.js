@@ -7,7 +7,7 @@ export default function Cart({productInfos}) {
   const width = useMediaQuery(theme.breakpoints.up('sm'))
   console.log(productInfos)
   return (
-      <Card sx={{borderRadius:3,boxShadow:'none',maxWidth:['375px','600px'],height:['none',495.95],mt:5,maxHeight:['100%','none']}}>
+      <Card sx={{borderRadius:3,boxShadow:'none',maxWidth:['375px','600px'],height:['none',475],mt:5,maxHeight:['100%','none']}}>
         <Grid container sx={{height:'100%'}} flexDirection={'row'}>
           <Grid item sm={6} sx={{height:'100%'}}>
             {
@@ -27,7 +27,7 @@ export default function Cart({productInfos}) {
             }
           </Grid>
           <Grid item sm={6} sx={{minHeight:['none','475px']}}>
-            <Grid container spacing={3} sx={{p:[3,4],fontWeight:'700',justifyContent:'space-between',height:'100%'}}> 
+            <Grid container spacing={4} sx={{p:[3,4],fontWeight:'700',justifyContent:'space-between',height:'100%'}}> 
               <Grid item>
                 <Grid item>
                   <Typography variant='h6' sx={{fontWeight:500,fontSize:'12px',color:theme.palette.primary.text,letterSpacing:'6px'}}>
@@ -35,7 +35,7 @@ export default function Cart({productInfos}) {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography variant='h4' sx={{pt:[3,4]}}>
+                  <Typography variant='h4' sx={{pt:[4,3]}}>
                     {productInfos.title}
                   </Typography>
                 </Grid>
@@ -49,7 +49,7 @@ export default function Cart({productInfos}) {
                   </Grid>
               }
               <Grid item sx={{width:'100%'}} container flexDirection={'column'} alignSelf={'flex-end'}>
-                <Grid item sx={{gap:'24px',pt:[4+(!productInfos.description ? 12.445 : 0),null]}} container alignItems={'center'}>
+                <Grid item sx={{gap:'24px',pt:[4+(!productInfos.description ? 16.445 : 0),(!productInfos.description ? 16.445 : 0)]}} container alignItems={'center'}>
                   <Grid>
                     <Typography variant='h4' sx={{color:theme.palette.price}}>
                       {productInfos.discountPrice ? productInfos.discountPrice : productInfos.price}
