@@ -44,6 +44,9 @@ const theme = createTheme({
   },
 })
 
+theme.palette.price = 'hsl(158, 36%, 37%)'
+theme.palette.primary.text = 'hsl(158, 36%, 37%)'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
